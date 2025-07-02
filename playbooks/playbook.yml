@@ -1,0 +1,6 @@
+# playbooks/playbook.yml
+- hosts: all
+  tasks:
+    - name: Update apt packages
+      apt:
+        update_cache: yes
