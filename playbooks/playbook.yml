@@ -1,5 +1,6 @@
 # playbooks/playbook.yml
-- hosts: all
+-- hosts: all
+  become: yes
   tasks:
     - name: Update apt packages
       apt:
